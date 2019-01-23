@@ -18,3 +18,6 @@ Aprendi a correr un programa en C (Compilarlo) desde la consola.
 Tambien cree librerias en C desde la consola. 
 Aprendi como interactuan las partes de un programa en C.
 Aprendi sobre las extensiones .h, .o y .c
+
+## Commit
+https://github.com/AlexisFreud/clase-SO/commit/065e63032f937fbe4cbb7c5ba4ce358ea8992678
