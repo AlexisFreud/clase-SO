@@ -1,6 +1,8 @@
 ## Objetivo
+~~~
 Crear dos llamadas a sistema: una para apagar y otra para reiniciar.
 Además, crear sus respectivos programas.
+~~~
 
 ## Herramientas
 git
