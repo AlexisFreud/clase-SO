@@ -27,7 +27,7 @@ gcc
 
 ## ¿Qué aprendí?
 ~~~
-
+Al final de la práctica habiamos logrado crear las llamadas al sistema, pero fue directamente desde la parte central de la computadora. Aprendí bastante sobre todo lo que se debe cambiar 
 ~~~
 
 ## Url del commit
