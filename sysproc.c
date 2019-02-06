@@ -7,6 +7,7 @@
 #include "mmu.h"
 #include "proc.h"
 
+
 int
 sys_fork(void)
 {
@@ -88,4 +89,18 @@ sys_uptime(void)
   xticks = ticks;
   release(&tickslock);
   return xticks;
+}
+
+
+// Shutdown
+int sys_shutdown(void){
+	outw(0xb004, 0x2000);
+	return 0;
+}
+
+
+// Reboot
+int sys_reboot(void){
+	outb(0x64, 0xFE);
+	return 0;
 }
