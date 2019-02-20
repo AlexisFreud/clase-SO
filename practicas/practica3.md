@@ -1,7 +1,6 @@
 ## Objetivo
 ~~~
-Crear dos llamadas a sistema: una para apagar y otra para reiniciar.
-Además, crear sus respectivos programas.
+Modificar el programa sh.c para ejecutar el comando anterior.
 ~~~
 
 ## Herramientas
@@ -13,16 +12,10 @@ gcc
 
 ## Conceptos
 ~~~
-1)  Llamadas a sistema
-* La forma en que el kernel (SO) da acceso al HW.
-* Se implementa mediante interrupciones de software (trap), ie, la aplicación interrumpe que el kernel se ejecute
-
-2) Modo Kernel
-* Es bit/registro que activa el CPU para acceder al HW.
-* Solo hay un programa que se ejecuta con este bit, es el kernel
-
-3) Interrupciones
-* La forma en que el HW interactua con el CPU
+1) Como es que se crean nuevos procesos.
+    * Un programa padre (sh.c) ejecuta la llamada a sistema fork
+    * La llamada a sistema fork clona al proceso padre
+    * El proceso hijo manda a llamar a exec para ejecutar otro código.
 ~~~
 
 ## ¿Qué aprendí?
@@ -35,5 +28,7 @@ Aprendi todo lo que se necesita para poder crear una función en sistema, y como
 
 ## Url del commit
 ~~~
-https://github.com/AlexisFreud/clase-SO/commit/1adafa9e92010cf2ffbedece302a083897217a25
+
 ~~~
+
+## Como se relaciona con los conceptos anteriores
