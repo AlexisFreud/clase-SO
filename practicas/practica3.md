@@ -35,12 +35,17 @@ gcc
 
 ## ¿Qué aprendí?
 ~~~
+Aprendí bastante sobre los tipos de estados que tienen los procesos. Aprendimos en general todo
+lo que es un proceso, que es una instancia de un programa, y que el sistema operativo es el unico
+programa que no es un proceso, que además no se sabe que existe.
 
+Aprendimos sobre el proceso init, que es el que crea el Sistema Operativo. 
+
+Aprendí a hacer cambios en el init de un Sistema Operativo. Lo cambié para hacer
+que el arranque muestre mensajes diferentes.
 ~~~
 
 ## Url del commit
 ~~~
-
+https://github.com/AlexisFreud/clase-SO/commit/e81e5c21cadde4e2686220cd34a1b4789e552e6c
 ~~~
-
-## Como se relaciona con los conceptos anteriores
