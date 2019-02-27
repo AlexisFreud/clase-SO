@@ -1,6 +1,6 @@
 ## Objetivo
 ~~~
-Modificar el programa sh.c para ejecutar el comando anterior.
+Modificar al programa init para que muestre un programa de bienvenida.
 ~~~
 
 ## Herramientas
@@ -12,18 +12,30 @@ gcc
 
 ## Conceptos
 ~~~
-1) Como es que se crean nuevos procesos.
-    * Un programa padre (sh.c) ejecuta la llamada a sistema fork
-    * La llamada a sistema fork clona al proceso padre
-    * El proceso hijo manda a llamar a exec para ejecutar otro código.
+1) Proceso:
+  - Instancia de un programa.
+  - Tiene tres partes:
+      + Stack: variables y llamadas a funciones.
+      + Heap: Memoria dinámica (malloc o new).
+      + Código
+  - Se crea mediante dos llamadas a sistema:
+      + fork (clona)
+      + exec (cambia el código)
+  - Tiene un estado:
+      + Corriendo
+      + Durmiento
+      + Espera
+      + Completado
+      + Zombie
+      
+2) Programa init
+  - Es el programa encargado de inicializar el sistema operativo y dejarlo listo para usarse.
+  - Es el único proceso que crea el sistema operativo.
 ~~~
 
 ## ¿Qué aprendí?
 ~~~
-Al final de la práctica habiamos logrado crear las llamadas al sistema, pero fue directamente desde la parte central de la computadora.
-Logramos, despues de dos clases, crear la función para apagar y reiniciar la computadora. 
-También aprendí que no se puede acceder directamente al hardware de la computadora, si no que se debe acceder a traves del kernel.
-Aprendi todo lo que se necesita para poder crear una función en sistema, y como plus una manera de apagar la computadora. 
+
 ~~~
 
 ## Url del commit
