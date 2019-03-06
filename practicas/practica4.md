@@ -26,11 +26,12 @@ gcc
 
 ## ¿Qué aprendí?
 ~~~
-
+En la primera parte aprendí a crear nuevas funciones, ahora más avanzadas, a nuestro sistema operativo. Hoy entendí mejor que un sistema operativo es exactamente lo mismo que un programa. Aprendí bastante sobre la organización de procesos (planificación de procesos) donde existe una "lista" de prioridades que seguir. Modificamos muchas cosas en C, por lo que además aprendimos un poco sobre el lenguaje. Cabe resaltar que utilizamos una versión algo vieja de C, por lo que es un poco más retador e interesante hacer cambios.
 ~~~
 
 ## Url del commit
 ~~~
+link 1: https://github.com/AlexisFreud/clase-SO/commit/4ba394daf57c126abef95b5face7c3a45f9773d1
 
 ~~~
 
