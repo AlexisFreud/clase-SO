@@ -32,7 +32,7 @@ En la primera parte aprendí a crear nuevas funciones, ahora más avanzadas, a n
 ## Url del commit
 ~~~
 link 1: https://github.com/AlexisFreud/clase-SO/commit/4ba394daf57c126abef95b5face7c3a45f9773d1
-
+link 2: https://github.com/AlexisFreud/clase-SO/commit/7c7f9b06907c62229b80511da0f7f12888fa2e58
 ~~~
 
 ## ¿Cómo se relaciona con los conceptos anteriores?
