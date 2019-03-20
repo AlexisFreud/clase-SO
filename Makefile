@@ -185,6 +185,7 @@ UPROGS=\
 	_reiniciar\
 	_chprio\
 	_lsprio\
+	_fibo\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)
