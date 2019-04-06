@@ -104,3 +104,43 @@ int sys_reboot(void){
 	outb(0x64, 0xFE);
 	return 0;
 }
+
+int 
+sys_date(struct rtcdate r){
+	cmostime(&r);
+	uint hora = r.hour;
+	uint minuto = r.minute;
+	uint segundo = r.second;
+	uint dia = r.day;
+	uint mes = r.month;
+	uint anio = r.year;
+	if(hora < 6){
+		hora = hora + 18;
+		if(dia == 1){
+			if(mes <= 8 && mes%2 == 0){
+				dia = 31;
+			}else if(mes > 7 && mes%2 == 1){
+				dia = 31;
+			}else if(mes == 3 && anio%4 == 0){
+				dia = 29;
+			}else if(mes == 3){
+				dia = 28;
+			}else{
+				dia = 30;
+			}
+			if(mes == 1){
+				anio = anio - 1;
+				mes = 12;
+				dia = 31;
+			}else{
+				mes = mes - 1;
+			}
+		}else{
+			dia = dia - 1;
+		}
+	}else{
+		hora = hora - 6;
+	}
+	cprintf("%d : %d : %d\n%d/%d/%d\n",hora,minuto,segundo,dia,mes,anio);
+	return 0;
+}

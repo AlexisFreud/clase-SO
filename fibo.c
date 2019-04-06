@@ -4,19 +4,19 @@
 
 int fib(int n) 
 { 
-  int a = 0, b = 1, c, i, j=0; 
-  if( n == 0) 
-    return a; 
+	int a = 0, b = 1, c, i, j=0; 
+	if( n == 0) 
+    	return a; 
 	
-while(j < 10){
-  for (i = 2; i <= n; i++) 
-  { 
-     c = a + b; 
-     a = b; 
-     b = c; 
-  } 
-  return b; 
-} 
+	while(j < 10){
+		for (i = 2; i <= n; i++) 
+		{ 
+     		c = a + b; 
+     		a = b; 
+     		b = c; 
+  		}  
+	}
+	return b;
 }
 
 int main(int argc, char **argv){

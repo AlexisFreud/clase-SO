@@ -107,6 +107,7 @@ extern int sys_shutdown(void);
 extern int sys_reboot(void);
 extern int sys_getpriority(void);
 extern int sys_setpriority(void);
+extern int sys_date(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]        sys_fork,
@@ -134,16 +135,45 @@ static int (*syscalls[])(void) = {
 [SYS_reboot]      sys_reboot,
 [SYS_getpriority] sys_getpriority,
 [SYS_setpriority] sys_setpriority,
+[SYS_date] 		  sys_date,
 };
 
 void
 syscall(void)
 {
   int num;
+  char* arreglo[] = {
+	  "sys_fork",
+	  "sys_exit",
+	  "sys_wait",
+	  "sys_pipe",
+	  "sys_read",
+	  "sys_kill",
+	  "sys_exec",
+	  "sys_fstat",
+	  "sys_chdir",
+	  "sys_dup",
+	  "sys_getpid",
+	  "sys_sbrk",
+	  "sys_sleep",
+	  "sys_uptime",
+	  "sys_open",
+	  "sys_write",
+	  "sys_mknod",
+   	  "sys_unlink",
+   	  "sys_link",
+   	  "sys_mkdir",
+   	  "sys_close",
+   	  "sys_shutdown",
+	  "sys_reboot",
+      "sys_getpriority",
+      "sys_setpriority",
+	  "sys_date"
+  };
   struct proc *curproc = myproc();
-
   num = curproc->tf->eax;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
+	cprintf("%s -> %d\n", arreglo[num-1], num);
     curproc->tf->eax = syscalls[num]();
   } else {
     cprintf("%d %s: unknown sys call %d\n",
