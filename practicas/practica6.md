@@ -50,7 +50,8 @@ Problemas de sincronización.
 
 ## Url del commit
 ~~~
-
+Link 1: https://github.com/AlexisFreud/clase-SO/commit/0f936730d70215fadd45e404af5d6057fbb1c3f5
+Link 2: 
 ~~~
 
 ## ¿Cómo se relaciona con los conceptos anteriores?
