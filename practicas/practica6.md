@@ -13,12 +13,14 @@ gcc
 ~~~
 Hilos
   - Proceso ligero
-  - Solo tiene un stack y el código. El heap se comparte con el proceso principal. Si el proceso principal termina, entonces los hilos tambien.
+  - Solo tiene un stack y el código. El heap se comparte con el proceso principal. 
+    Si el proceso principal termina, entonces los hilos tambien.
 ~~~
 ~~~
 Lock
   - Mecanismo de sincronización.
-  - La diferencia con un semaforo es que el Lock permite uno a uno, y el semáforo pueden ser muchos antes de detenerse.
+  - La diferencia con un semaforo es que el Lock permite uno a uno, 
+    y el semáforo pueden ser muchos antes de detenerse.
   - Variable global que soporta dos operaciones:
     - Lock: el primer hilo que hace lock se adueña del recurso. El resto lo espera.
     - Unlock: el hilo dueño del recurso lo libera.
