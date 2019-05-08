@@ -43,17 +43,14 @@ Problemas de sincronización.
   
 ~~~
 
-## ¿Qué aprendí?
-~~~
-
-~~~
-
 ## Url del commit
 ~~~
-
+Link 1: https://github.com/AlexisFreud/clase-SO/commit/0f936730d70215fadd45e404af5d6057fbb1c3f5
+Link 2: https://github.com/AlexisFreud/clase-SO/commit/b58832f5985c11d81ad95d8fc31718371abb3ebc
 ~~~
 
-## ¿Cómo se relaciona con los conceptos anteriores?
+## ¿Qué aprendí?
 ~~~
-
+Aprendimos a manejar semáforos y locks. Además de toda la teoría aqui descrita, logramos
+una implementación completa del funcionamiento elemental.
 ~~~
