@@ -23,10 +23,12 @@ Directorios
 
 ## Url del commit
 ~~~
-
+https://github.com/AlexisFreud/clase-SO/commit/35cc88aea91ec9f0dd587113c6efe0acc6eefad8
 ~~~
 
 ## ¿Qué aprendí?
 ~~~
-
+Aprendí la manera en que funcionan los directorios y los archivos. 
+También sobre lo que son especificamente los archivos y los directorios.
+Aprendí sobre extensiones y formatos de archivos.
 ~~~
